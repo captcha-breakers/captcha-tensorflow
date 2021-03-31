@@ -21,7 +21,7 @@ def main(img_dir, width, height, n):
 
     total_images = 0
     for _ in range(n):
-        i = my_cap = ''.join(choices(ascii_uppercase, k=6))
+        i = my_cap = ''.join(choices(ascii_uppercase, k=4))
         captcha = ''.join(i)
         fn = os.path.join(img_dir, '%s_%s.png' % (captcha, uuid.uuid4()))
         image.write(captcha, fn)
@@ -29,5 +29,5 @@ def main(img_dir, width, height, n):
 
 
 os.system("rm -rf images")
-main("./images/train/", 160, 100, 1000)
-main("./images/test/", 160, 100, 1000)
+main("./images/train/", 120, 100, 1000)
+main("./images/test/", 120, 100, 1000)
