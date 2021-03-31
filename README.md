@@ -28,7 +28,7 @@ old code that using tensorflow 1.x is moved to [tensorflow_v1](tensorflow_v1).
 
 ```bash
 # generating test data
-$ python datasets/gen_captcha.py -d --npi=4 -n 6
+$ python3 datasets/gen_captcha.py -d --npi=4 -n 1
 ```
 
 - Model: AlexNet
